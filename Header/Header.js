@@ -13,7 +13,7 @@ function InsertHeaderContent() {
   </div>
 
   <!-- Header Title -->
-  <a href='/' id='Header_TitleContainer'>
+  <a href='/Cardinal-Engine-Website/' id='Header_TitleContainer'>
     <div id='Header_LogoWrapper'>
       <img
         id='Header_Logo'
