@@ -1,0 +1,243 @@
+:root {
+	--Header_BG_Color: rgb(6, 128, 165);
+	--Header_Height: 50px;
+}
+
+header {
+	position: sticky;
+	top: 0;
+	z-index: 999;
+
+	background-color: var(--Header_BG_Color);
+	width: 100%;
+	height: var(--Header_Height);
+
+	display: flex;
+}
+
+/* Header Navigation Collapsed Toggle */
+#Header_NavigationToggle_Wrapper {
+	display: none;
+	height: 100%;
+
+	padding: 12px;
+}
+
+#Header_NavigationToggle {
+	height: 100%;
+	width: auto;
+	object-fit: contain;
+
+	cursor: pointer;
+}
+
+/* Header Title */
+#Header_TitleContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	text-decoration: none;
+	color: inherit;
+	white-space: nowrap;
+
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#Header_LogoWrapper {
+	height: 100%;
+}
+
+#Header_Logo {
+	height: var(--Header_Height);
+	width: var(--Header_Height);
+
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+}
+
+/* Header Navigation */
+#Header_Navigation {
+	width: 100%;
+	display: flex;
+}
+
+.Header_Navigation_Item {
+	position: relative;
+
+	margin-left: 10px;
+	margin-right: 10px;
+
+	cursor: default;
+}
+
+.Header_Navigation_Item_Head {
+	height: 100%;
+
+	display: flex;
+	align-items: center;
+
+	font-weight: bold;
+	font-size: large;
+	text-transform: uppercase;
+	white-space: nowrap;
+
+	text-decoration: none;
+	color: inherit;
+}
+
+.Header_Navigation_Item_Head_Line {
+	position: absolute;
+	bottom: 0;
+
+	width: 100%;
+	height: 5px;
+	background-color: white;
+
+	transform: scaleX(0%);
+	transition: transform 0.1s ease;
+}
+
+.Header_Navigation_Item:hover .Header_Navigation_Item_Head_Line {
+	transform: scaleX(100%);
+}
+
+.Header_Navigation_Item_Body {
+	position: absolute;
+	min-width: 100%;
+	width: fit-content;
+
+	left: 50%;
+	transform: translateX(-50%);
+
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s, opacity 0.1s ease;
+
+	background-color: var(--Header_BG_Color);
+}
+
+.Header_Navigation_Item:hover .Header_Navigation_Item_Body {
+	visibility: visible;
+	opacity: 1;
+}
+
+.Header_Navigation_Item_Body_Entry {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+
+	white-space: nowrap;
+	text-decoration: none;
+	color: inherit;
+
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 2.5px;
+	padding-bottom: 2.5px;
+
+	cursor: pointer;
+}
+
+.Header_Navigation_Item_Body_Entry:hover {
+	text-decoration: underline;
+	text-decoration-color: white;
+	text-decoration-thickness: 2px;
+}
+
+/* User Dropdown Area */
+#Header_User {
+	background-color: rgb(6, 90, 165);
+	position: relative;
+}
+
+.Header_User_Login {
+	cursor: pointer;
+}
+
+#Header_User_Icon {
+	height: 100%;
+	object-fit: cover;
+
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 5px;
+}
+
+.Header_User_Body {
+	left: unset;
+	right: 0;
+	transform: none;
+}
+
+#Header_User:hover .Header_User_Body {
+	visibility: visible;
+	opacity: 1;
+}
+
+/* Collapse Header Navigation into Sidebar */
+@media only screen and (max-width: 900px) {
+	header {
+		display: grid;
+		grid-template-rows: var(--Header_Height);
+		grid-template-columns: 0fr 1fr 0fr;
+	}
+
+	#Header_NavigationToggle_Wrapper {
+		display: block;
+	}
+
+	#Header_Navigation {
+		position: absolute;
+		width: fit-content;
+		top: var(--Header_Height);
+		left: 0;
+		background-color: var(--Header_BG_Color);
+
+		max-height: calc(100vh - var(--Header_Height));
+		overflow-y: auto;
+
+		flex-direction: column;
+
+		transform: translateX(-100%);
+	}
+
+	.Header_Navigation_Open {
+		transform: translateX(0%) !important;
+		transition: transform 0.2s ease;
+	}
+
+	.Header_Navigation_Item_Body {
+		position: relative;
+
+		visibility: visible;
+		opacity: 1;
+
+		background-color: var(--Header_BG_Color);
+	}
+
+	.Header_User_Body {
+		position: absolute;
+
+		visibility: hidden;
+		opacity: 0;
+	}
+
+	.Header_Navigation_Item_Body_Entry {
+		justify-content: unset;
+	}
+
+	.Header_Navigation_Item_Body_Entry::before {
+		content: "";
+		margin-left: 10px;
+	}
+}
+
+/* Collapse Title into Logo only */
+@media only screen and (max-width: 500px) {
+	#Header_Title {
+		display: none;
+	}
+}
