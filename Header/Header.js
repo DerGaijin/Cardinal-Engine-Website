@@ -7,7 +7,7 @@ function InsertHeaderContent() {
   <div id='Header_NavigationToggle_Wrapper'>
     <img
       id='Header_NavigationToggle'
-      src='/Resources/Icons/Icon feather-menu_white.png'
+      src='/Cardinal-Engine-Website/Resources/Icons/Icon feather-menu_white.png'
       alt='Menu Icon'
       onclick='Header_ToggleNavigation()'
     />
@@ -18,7 +18,7 @@ function InsertHeaderContent() {
     <div id='Header_LogoWrapper'>
       <img
         id='Header_Logo'
-        src='/Resources/Icons/Logo CE White.png'
+        src='/Cardinal-Engine-Website/Resources/Icons/Logo CE White.png'
         alt='Logo'
       />
     </div>
@@ -32,16 +32,16 @@ function InsertHeaderContent() {
       <div class='Header_Navigation_Item_Head_Line'></div>
       <div class='Header_Navigation_Item_Body'>
         <a
-          href='/Showcase/Features/'
+          href='/Cardinal-Engine-Website/Showcase/Features/'
           class='Header_Navigation_Item_Body_Entry'
           >Features</a
         >
         <a
-          href='/Showcase/Gallery'
+          href='/Cardinal-Engine-Website/Showcase/Gallery'
           class='Header_Navigation_Item_Body_Entry'
           >Gallery</a
         >
-        <a href='/Showcase/Games/' class='Header_Navigation_Item_Body_Entry'
+        <a href='/Cardinal-Engine-Website/Showcase/Games/' class='Header_Navigation_Item_Body_Entry'
           >Games</a
         >
       </div>
@@ -50,21 +50,21 @@ function InsertHeaderContent() {
       <div class='Header_Navigation_Item_Head'>Progress</div>
       <div class='Header_Navigation_Item_Head_Line'></div>
       <div class='Header_Navigation_Item_Body'>
-        <a href='/Progress/News/' class='Header_Navigation_Item_Body_Entry'
+        <a href='/Cardinal-Engine-Website/Progress/News/' class='Header_Navigation_Item_Body_Entry'
           >News</a
         >
         <a
-          href='/Progress/RoadMap/'
+          href='/Cardinal-Engine-Website/Progress/RoadMap/'
           class='Header_Navigation_Item_Body_Entry'
           >Road Map</a
         >
         <a
-          href='/Progress/Progress/'
+          href='/Cardinal-Engine-Website/Progress/Progress/'
           class='Header_Navigation_Item_Body_Entry'
           >Progress</a
         >
         <a
-          href='/Progress/DevLog/'
+          href='/Cardinal-Engine-Website/Progress/DevLog/'
           class='Header_Navigation_Item_Body_Entry'
           >Dev-Log</a
         >
@@ -75,7 +75,7 @@ function InsertHeaderContent() {
       <div class='Header_Navigation_Item_Head_Line'></div>
       <div class='Header_Navigation_Item_Body'>
         <a
-          href='/Community/Forum/'
+          href='/Cardinal-Engine-Website/Community/Forum/'
           class='Header_Navigation_Item_Body_Entry'
           >Forum</a
         >
@@ -86,15 +86,15 @@ function InsertHeaderContent() {
       <div class='Header_Navigation_Item_Head_Line'></div>
       <div class='Header_Navigation_Item_Body'>
         <a
-          href='/Learn/Tutorials/'
+          href='/Cardinal-Engine-Website/Learn/Tutorials/'
           class='Header_Navigation_Item_Body_Entry'
           >Tutorials</a
         >
-        <a href='/Learn/Examples/' class='Header_Navigation_Item_Body_Entry'
+        <a href='/Cardinal-Engine-Website/Learn/Examples/' class='Header_Navigation_Item_Body_Entry'
           >Examples</a
         >
         <a
-          href='/Learn/Reference/'
+          href='/Cardinal-Engine-Website/Learn/Reference/'
           class='Header_Navigation_Item_Body_Entry'
           >Reference</a
         >
