@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", InsertHeaderContent);
 
 function InsertHeaderContent() {
-  console.log("Hello");
   document.getElementById("HeaderContent").innerHTML = `
   <!-- Header Navigation Collapsed Toggle -->
   <div id='Header_NavigationToggle_Wrapper'>
