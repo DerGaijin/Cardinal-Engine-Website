@@ -67,6 +67,11 @@ function InsertHeaderContent() {
           class='Header_Navigation_Item_Body_Entry'
           >Dev-Log</a
         >
+        <a
+        href='/Progress/ToDo/'
+        class='Header_Navigation_Item_Body_Entry'
+        >ToDo</a
+      >
       </div>
     </div>
     <div class='Header_Navigation_Item'>

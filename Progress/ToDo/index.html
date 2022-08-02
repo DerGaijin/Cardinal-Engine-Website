@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" ColorTheme="DARK">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cardinal Engine - ToDo</title>
+
+    <link rel="icon" href="../../Resources/Icons/Logo CE White.png" />
+    <link rel="stylesheet" href="../../Core/General.css" />
+
+    <script src="../../Core/Core.js"></script>
+    <script src="../../Header/Header.js"></script>
+    <link rel="stylesheet" href="../../Header/Header.css" />
+
+    <script src="../../Footer/Footer.js"></script>
+    <link rel="stylesheet" href="../../Footer/Footer.css" />
+
+    <link rel="stylesheet" href="ToDo.css" />
+  </head>
+  <body>
+    <header id="HeaderContent"></header>
+
+    <main>
+      <div id="Content">
+        <div class="ToDo_Box">
+          <h2 class="ToDo_Header_Big">Engine</h2>
+          <div class="ToDo_Container">
+            <div class="ToDo_SubContainer">
+              <div class="ToDoListWrapper">
+                <h3 class="ToDo_Header_Small">Bugs To Fix</h3>
+                <ul class="ToDoList">
+                  <li>Asset System does not release Resources</li>
+                  <li>Component Rotation is incorrect</li>
+                  <li class="ToDo_Important">Restart does not Reset the Profiler</li>
+                  <li>
+                    Asset System Async Load copies Asset Storage pointer, that
+                    gets invalidated on AssetStorage Remove
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="ToDo_SubContainer">
+              <div class="ToDoListWrapper">
+                <h3 class="ToDo_Header_Small">Missing Features</h3>
+                <ul class="ToDoList">
+                  <li>Engine Exit Guard</li>
+                  <li>Add Material Serialization</li>
+                  <li>Add Default Material</li>
+                  <li>Add Default Sampler</li>
+                  <li>Add Invalid Texture</li>
+                  <li>Add Wireframe Material</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ToDo_Box">
+          <h2 class="ToDo_Header_Big">Editor</h2>
+          <div class="ToDo_Container">
+            <div class="ToDo_SubContainer">
+              <div class="ToDoListWrapper">
+                <h3 class="ToDo_Header_Small">Bugs To Fix</h3>
+                <ul class="ToDoList">
+                  <li>
+                    ImGui Images store Pointers that get invalid when Unloading
+                    the Asset
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="ToDo_SubContainer">
+              <div class="ToDoListWrapper">
+                <h3 class="ToDo_Header_Small">Missing Features</h3>
+                <ul class="ToDoList">
+                  <li>
+                    Add Errors and Warning to the Project Manager
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer id="FooterContent"></footer>
+  </body>
+</html>
