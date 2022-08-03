@@ -1,112 +1,90 @@
-#ProgressBar_Container {
-	padding: 10px;
-	margin-bottom: 20px;
-
-	background-color: rgb(50, 50, 50);
-
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+main {
+  display: flex;
+  justify-content: center;
+  margin: 5%;
 }
 
-#ProgressBar_Text {
-	margin-bottom: 5px;
-}
+#Content {
+  width: 100%;
 
-#ProgressBar_Outer,
-#ProgressBar_Inner {
-	border-radius: 40px;
-}
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 
-#ProgressBar_Outer {
-	width: 100%;
-	height: 30px;
-
-	margin-left: 20px;
-	margin-right: 20px;
-	padding: 5px;
-
-	background-color: grey;
-
-	overflow: hidden;
-}
-
-#ProgressBar_Inner {
-	width: 40%;
-	height: 100%;
-	background-color: rgb(6, 128, 165);
-
-	border-top-right-radius: 0;
-	border-bottom-right-radius: 0;
-}
-
-/* Progress Boxes */
-
-#ProgressBoxes_Container {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  padding: 1%;
+  margin: 1%;
 }
 
 .ProgressBox {
-	height: fit-content;
+  height: fit-content;
+  background-color: rgba(50, 50, 50, 0.9);
 
-	margin: 10px;
-
-	background-color: rgba(50, 50, 50, 0.9);
+  margin: 2%;
 }
 
-.ProgressBox_Head {
-	background-color: grey;
-	padding: 5px;
+.ProgressBox_Header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: grey;
+  padding: 1%;
 }
 
 .ProgressBox_Title {
-	width: 100%;
-	text-align: center;
+  margin-bottom: 5px;
 }
 
-.ProgressBox_Progress {
-	display: flex;
-	align-items: center;
+.ProgressBox_BarWrapper {
+  width: 100%;
+  height: 22px;
 }
 
-.ProgressBox_Bar_Outer {
-	width: 100%;
-	height: 15px;
-	margin-right: 5px;
-	padding: 3px;
-	background-color: rgb(30, 30, 30);
+.ProgressBar_Outer {
+  position: relative;
+
+  height: 100%;
+  background-color: rgb(30, 30, 30);
+  padding: 2px;
 }
 
-.ProgressBox_Bar_Inner {
-	width: 40%;
-	height: 100%;
-	background-color: rgb(6, 128, 165);
+.ProgressBar_Inner {
+  width: 50%;
+  height: 100%;
+  background-color: rgb(6, 128, 165);
 }
 
-/* Progress Box Body */
-.ProgressBox_Body {
-	padding-left: 22px;
-	padding-right: 22px;
+.ProgressBar_Text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.ProgressBox_Entry {
-	padding-top: 5px;
-	padding-bottom: 5px;
+.ProgressBox_Entries {
+  list-style-type: none;
+  margin-left: 0.5em;
 }
 
-.ProgressBox_Entry_Completed {
-	color: green;
+.ProgressBox_Entries li::before {
+  content: "\2610\0020 ";
 }
 
-.ProgressBox_Entry_InProgress {
-	color: yellow;
+.ProgressBox_Entries li {
+  font-size: 18px;
+
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
-/* Switch to single Column */
-@media only screen and (max-width: 900px) {
-	#ProgressBoxes_Container {
-		grid-template-columns: 1fr;
-	}
+.Entry_Completed {
+  color: rgb(0, 200, 0);
+}
+
+.Entry_Completed::before {
+  content: "\2611\0020 " !important;
 }
