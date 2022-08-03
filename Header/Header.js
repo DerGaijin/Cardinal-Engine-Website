@@ -83,6 +83,11 @@ function InsertHeaderContent() {
           class='Header_Navigation_Item_Body_Entry'
           >Forum</a
         >
+        <a
+        href='/Community/Developers/'
+        class='Header_Navigation_Item_Body_Entry'
+        >Developers</a
+        >
       </div>
     </div>
     <div class='Header_Navigation_Item'>

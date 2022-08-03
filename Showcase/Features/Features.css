@@ -1,0 +1,46 @@
+main {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.FeatureBox {
+	padding: 10px;
+	margin: 10px;
+
+	background-color: rgba(40, 40, 40, 0.8);
+}
+
+.FeatureBox_Underline {
+	background-color: white;
+	height: 2px;
+	margin-bottom: 5px;
+}
+
+.FeatureBox_ImageWrapper {
+	width: 100%;
+}
+
+.FeatureBox_Image {
+	width: 100%;
+	height: auto;
+	object-fit: fill;
+}
+
+.FeatureBox_Title {
+	font-family: inherit;
+	font-weight: 600;
+	font-size: 22.5px;
+}
+
+.FeatureBox_Description {
+	white-space: pre-line;
+	font-family: inherit;
+	font-size: inherit;
+}
+
+/* Switch to single Column */
+@media only screen and (max-width: 900px) {
+	main {
+		grid-template-columns: 1fr;
+	}
+}

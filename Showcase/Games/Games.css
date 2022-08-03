@@ -1,0 +1,52 @@
+main {
+  display: flex;
+  justify-content: center;
+  margin: 5%;
+}
+
+#Content {
+  width: 100%;
+}
+
+#GamesHeader {
+  width: 100%;
+
+  border-bottom: 5px solid rgb(6, 90, 165);
+  background-color: rgba(35, 35, 35, 0.5);
+}
+
+#GamesHeader_Title {
+  text-align: center;
+}
+
+.Game_Box {
+  background-color: rgb(35, 35, 35);
+
+  padding: 10px;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.Game_Title {
+  border-bottom: 4px solid white;
+}
+
+.Game_DescriptionWrapper {
+  padding-top: 10px;
+
+  display: flex;
+}
+
+.Game_Image {
+  width: 300px;
+  height: 300px;
+  flex: 0 0 300px;
+
+  border: 1px solid white;
+}
+
+.Game_Description {
+  padding-left: 10px;
+  width: 100%;
+}
