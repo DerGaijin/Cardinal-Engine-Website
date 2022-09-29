@@ -38,7 +38,7 @@ function LoadExternalSites() {
 			}
 		}
 	};
-	HeaderRequest.open("GET", "Header/Header.html", true);
+	HeaderRequest.open("GET", "/Header/Header.html", true);
 	HeaderRequest.send(null);
 
 	// Set Footer
@@ -51,6 +51,6 @@ function LoadExternalSites() {
 			}
 		}
 	};
-	FooterRequest.open("GET", "Footer/Footer.html", true);
+	FooterRequest.open("GET", "/Footer/Footer.html", true);
 	FooterRequest.send(null);
 }
