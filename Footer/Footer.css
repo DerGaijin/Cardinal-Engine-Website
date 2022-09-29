@@ -1,7 +1,10 @@
 footer {
-  background-color: grey;
-  background-color: red;
+	background-color: rgb(50, 50, 50);
+	background-color: var(--BackgroundColorDark);
+	color: rgba(255, 255, 255, 0.4);
 
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: space-evenly;
+
+	padding: 20px;
 }
