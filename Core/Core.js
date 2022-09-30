@@ -19,6 +19,7 @@ function AddWebsitePrefix() {
   for (let Index = 0; Index < SrcElements.length; Index++) {
     const Element = SrcElements[Index];
     let Src = Element.getAttribute("src");
+    console.log(Src);
     if (Src.startsWith("/") && !Src.startsWith("/Cardinal-Engine-Website")) {
       Element.setAttribute("src", "/Cardinal-Engine-Website" + Src);
     }
@@ -42,7 +43,7 @@ function LoadExternalSites() {
   if (IsGithubHost) {
     HeaderURL = "/Cardinal-Engine-Website" + HeaderURL;
   }
-  HeaderRequest.open("GET", HeaderURL, true);
+  HeaderRequest.open("GET", HeaderURL, false);
   HeaderRequest.send(null);
 
   // Set Footer
@@ -59,6 +60,6 @@ function LoadExternalSites() {
   if (IsGithubHost) {
     FooterURL = "/Cardinal-Engine-Website" + FooterURL;
   }
-  FooterRequest.open("GET", FooterURL, true);
+  FooterRequest.open("GET", FooterURL, false);
   FooterRequest.send(null);
 }
