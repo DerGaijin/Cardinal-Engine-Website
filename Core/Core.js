@@ -19,7 +19,6 @@ function AddWebsitePrefix() {
   for (let Index = 0; Index < SrcElements.length; Index++) {
     const Element = SrcElements[Index];
     let Src = Element.getAttribute("src");
-    console.log(Src);
     if (Src.startsWith("/") && !Src.startsWith("/Cardinal-Engine-Website")) {
       Element.setAttribute("src", "/Cardinal-Engine-Website" + Src);
     }
