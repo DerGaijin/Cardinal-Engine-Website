@@ -25,7 +25,7 @@ function AddWebsitePrefix() {
   }
 }
 
-document.addEventListener("DOMContentLoaded", LoadExternalSites());
+document.addEventListener("DOMContentLoaded", LoadExternalSites);
 
 function LoadExternalSites() {
   // Set Header
