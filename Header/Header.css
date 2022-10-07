@@ -6,7 +6,7 @@ header {
 
 	border-bottom: 1px solid var(--AccentColor);
 
-	background-color: rgb(25, 25, 25, 0.5);
+	background-color: rgb(25, 25, 25, 1.0);
 
 	font-size: 22px;
 
@@ -35,6 +35,15 @@ header {
 #Header_Title {
 	white-space: nowrap;
 	font-size: 28px;
+}
+
+#Header_NavToggle {
+	display: none;
+	background: none;
+	border: none;
+
+	justify-content: center;
+	align-items: center;
 }
 
 #Header_Navigation {
@@ -69,4 +78,49 @@ header {
 	border-radius: 10px;
 
 	transform: translateY(15%);
+}
+
+@media only screen and (max-width: 700px) {
+	#HeaderContent {
+		display: grid;
+		grid-template-rows: 0fr 0fr;
+		grid-template-columns: 35px 100fr 35px;
+	}
+
+	#Header_LogoWrapper {
+		grid-column: 2;
+
+		justify-content: center;
+	}
+
+	#Header_Logo {
+		margin-right: 0px;
+	}
+
+	#Header_NavToggle {
+		display: flex;
+	}
+
+	#Header_Navigation {
+		width: 100%;
+
+		grid-row: 2;
+		grid-column: 1 / 4;
+		flex-direction: column;
+	}
+
+	.Header_NavItem {
+		width: 100%;
+		text-align: center;
+	}
+
+	.Header_NavItem:hover .Header_NavItemContent {
+		border-radius: 0px;
+
+		transform: translateY(0%);
+	}
+
+	.Header_NavCollapsed .Header_NavItemContent {
+		display: none;
+	}
 }

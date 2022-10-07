@@ -10,3 +10,31 @@ document.addEventListener("DOMContentLoaded", () => {
 		});
 	}
 });
+
+function ToggleOverview() {
+	SetOverviewState(
+		!document
+			.getElementById("OverviewList")
+			.classList.contains("OverviewList_Collapsed")
+	);
+}
+
+function HideOverview() {
+	SetOverviewState(true);
+}
+
+function SetOverviewState(IsHidden) {
+	if (IsHidden) {
+		document
+			.getElementById("OverviewList")
+			.classList.add("OverviewList_Collapsed");
+
+			document.getElementById("OverviewCollapseImage").setAttribute("src", "/Resources/Icons/plus.png");
+	} else {
+		document
+		.getElementById("OverviewList")
+		.classList.remove("OverviewList_Collapsed");
+
+		document.getElementById("OverviewCollapseImage").setAttribute("src", "/Resources/Icons/minus.png");
+	}
+}
