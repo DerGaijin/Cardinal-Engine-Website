@@ -107,8 +107,8 @@
 	width: 15px;
 	height: 15px;
 	margin-right: 5px;
-	background-image: url("/Resources/Icons/plus.png");
-	background-size: contain;
+    background-image: url("../Resources/Icons/plus.png");
+    background-size: contain;
 }
 
 .OverviewListToggle_Disabled {
@@ -118,7 +118,7 @@
 }
 
 .OverviewListToggle_Active {
-	background-image: url("/Resources/Icons/minus.png");
+    background-image: url("../Resources/Icons/minus.png");
 }
 
 .OVL_Entry_Body {
