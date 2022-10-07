@@ -1,4 +1,4 @@
-let IsGithubHost = true;
+let IsGithubHost = false;
 
 if (IsGithubHost) {
   window.addEventListener("load", AddWebsitePrefix);
