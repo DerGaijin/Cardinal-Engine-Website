@@ -1,0 +1,35 @@
+#HeaderContainer {
+	width: 100%;
+	height: 100px;
+}
+
+#HeaderContent {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100px;
+
+	background-color: var(--BackgroundColorLight);
+
+    border-bottom: 2px solid var(--AccentColor1);
+    border-top: 2px solid var(--AccentColor1);
+}
+
+#HC_TitleWrapper {
+	height: 100%;
+    
+    display: flex;
+
+    align-items: center;
+}
+
+#HC_Image {
+	width: fit-content;
+	height: 100%;
+
+    padding: 10px;
+}
+
+#HC_Title {
+    font-size: 40px;
+}

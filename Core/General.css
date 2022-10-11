@@ -1,0 +1,24 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	min-width: 100%;
+	min-height: 100%;
+}
+
+body {
+	min-width: 100%;
+	min-height: 100vh;
+
+	display: grid;
+	grid-template-rows: 0fr 1fr 0fr;
+
+	background-color: var(--BackgroundColor);
+}
+
+main {
+	height: 1000px;
+}

@@ -1,0 +1,13 @@
+:root {
+	--BackgroundColor: rgb(50, 50, 50);
+	--BackgroundColorLight: rgb(100, 100, 100);
+	--BackgroundColorDark: rgb(25, 25, 25);
+	
+	--AccentColor1: rgb(255, 100, 0);
+	--AccentColorLight1: rgb(255, 130, 0);
+	--AccentColorDark1: rgb(240, 80, 0);
+	
+    --AccentColor2: rgba(0, 0, 0, 1);
+	--AccentColorLight2: rgba(0, 0, 0, 1);
+	--AccentColorDark2: rgba(0, 0, 0, 1);
+}
