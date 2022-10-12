@@ -17,8 +17,6 @@ body {
 	grid-template-rows: 0fr 1fr 0fr;
 
 	background-color: var(--BackgroundColor);
-}
 
-main {
-	height: 1000px;
+	color: white;
 }

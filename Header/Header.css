@@ -1,35 +1,104 @@
 #HeaderContainer {
 	width: 100%;
-	height: 100px;
+	height: 90px;
 }
 
 #HeaderContent {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	height: 100px;
+	height: 90px;
 
 	background-color: var(--BackgroundColorLight);
 
-    border-bottom: 2px solid var(--AccentColor1);
-    border-top: 2px solid var(--AccentColor1);
+	border-bottom: 2px solid var(--AccentColor1);
+
+	box-shadow: 0px 10px 30px 0px #000000;
+
+	display: flex;
+	align-items: center;
 }
 
 #HC_TitleWrapper {
 	height: 100%;
-    
-    display: flex;
 
-    align-items: center;
+	display: flex;
+
+	align-items: center;
+
+	text-decoration: none;
+	color: inherit;
+
+	margin-right: 20px;
 }
 
 #HC_Image {
 	width: fit-content;
+	max-height: 50px;
 	height: 100%;
 
-    padding: 10px;
+	padding: 10px;
 }
 
 #HC_Title {
-    font-size: 40px;
+	font-size: 40px;
+
+	white-space: nowrap;
+}
+
+#HC_Navigation {
+	height: 100%;
+
+	display: flex;
+	align-items: center;
+}
+
+.HC_NavItem {
+	height: 100%;
+
+	font-size: 20px;
+}
+
+.HC_NavItem:hover {
+	background-color: var(--BackgroundColor);
+}
+
+.HC_NavItem:hover .HC_NavItemHead {
+	transition: transform 0.2s ease-out;
+	transform: translateY(5px);
+}
+
+.HC_NavItemHead {
+	width: 100%;
+	height: 100%;
+
+	padding-left: 10px;
+	padding-right: 10px;
+
+	display: flex;
+	align-items: center;
+
+	cursor: pointer;
+
+	text-decoration: none;
+	color: inherit;
+}
+
+.HC_NavItemBody {
+	position: absolute;
+	left: 0;
+	right: 0;
+
+	display: none;
+	justify-content: center;
+
+	padding: 20px;
+
+	border-top: 2px solid var(--AccentColor1);
+	background-color: var(--BackgroundColorDark);
+}
+
+.HC_NavItemBody:hover,
+.HC_NavItem:hover .HC_NavItemBody {
+	display: flex;
 }

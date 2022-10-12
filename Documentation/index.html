@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Cardinal Engine - Documentation</title>
+
+		<link rel="icon" href="../Resources/Icons/Logo CE White.png" />
+		<link rel="stylesheet" href="../Core/Style.css" />
+		<link rel="stylesheet" href="../Core/General.css" />
+		<link rel="stylesheet" href="Documentation.css" />
+
+		<link rel="stylesheet" href="../Header/Header.css" />
+		<link rel="stylesheet" href="../Footer/Footer.css" />
+
+		<script src="../Core/Core.js"></script>
+		<script src="../Header/Header.js"></script>
+		<script src="Documentation.js"></script>
+	</head>
+	<body>
+		<header id="HeaderContainer"></header>
+
+		<main>
+			<section id="DocumentationOverview">
+				<ul id="OverviewList">
+					<li class="OVL_Entry">
+						<div class="OVL_Entry_Head">
+							<div class="OVL_Toggle"></div>
+							<p class="OVL_Text" onclick="LoadDocumentation('/Template.html')">
+								Tutorials
+							</p>
+						</div>
+						<ul class="OVL_Entry_Body">
+							<li class="OVL_Entry">
+								<div class="OVL_Entry_Head">
+									<div class="OVL_Toggle_Disabled"></div>
+									<p
+										class="OVL_Text"
+										onclick="LoadDocumentation('/Template.html')"
+									>
+										Getting Started
+									</p>
+								</div>
+								<ul class="OVL_Entry_Body"></ul>
+							</li>
+						</ul>
+					</li>
+
+					<li class="OVL_Entry">
+						<div class="OVL_Entry_Head">
+							<div class="OVL_Toggle"></div>
+							<p class="OVL_Text" onclick="LoadDocumentation('/Template.html')">
+								Examples
+							</p>
+						</div>
+						<ul class="OVL_Entry_Body"></ul>
+					</li>
+
+					<li class="OVL_Entry">
+						<div class="OVL_Entry_Head">
+							<div class="OVL_Toggle"></div>
+							<p
+								class="OVL_Text"
+								onclick="LoadDocumentation('/APIReference/APIReference.html')"
+							>
+								API Reference
+							</p>
+						</div>
+						<ul class="OVL_Entry_Body"></ul>
+					</li>
+				</ul>
+			</section>
+			<section id="DocumentationContent"></section>
+		</main>
+
+		<footer id="FooterContainer"></footer>
+	</body>
+</html>

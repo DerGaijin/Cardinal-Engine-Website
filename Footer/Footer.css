@@ -1,3 +1,10 @@
 #FooterContainer {
-    
+    height: 300px;
+
+    border-top: 2px solid var(--AccentColor1);
+    background-color: var(--BackgroundColorDark);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
