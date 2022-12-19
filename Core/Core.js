@@ -11,7 +11,7 @@ function AJAX(URL, OnCompleted, FormData = null, Async = true) {
 			if (xmlhttp.status == 200) {
 				OnCompleted(xmlhttp.response);
 			} else {
-				alert("AJAX returned Error Code '" + xmlhttp.status + "'");
+				alert("AJAX returned Error Code '" + xmlhttp.status + "' from '" + URL + "'");
 			}
 		}
 	};
