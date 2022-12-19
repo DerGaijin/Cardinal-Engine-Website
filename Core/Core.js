@@ -1,4 +1,4 @@
-const IsGithubHost = false;
+const IsGithubHost = true;
 
 document.addEventListener("DOMContentLoaded", ReplaceHeader);
 document.addEventListener("DOMContentLoaded", ReplaceFooter);
